@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0.2rem;
+    font-size: 0.95rem;
+  }
+}
+.header-inicio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+  gap: 790px;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: #f58c15;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.header-inicio h1 {
+  margin: 0;
+}

@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+	.App {
+		padding: 1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.App {
+		padding: 0.2rem;
+		font-size: 0.95rem;
+	}
+}
+
+
+
+

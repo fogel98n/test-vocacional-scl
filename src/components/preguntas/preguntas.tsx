@@ -70,10 +70,10 @@ export function Testpreguntas() {
         </div>
 
         <div className="test-etiquetas">
-          <span>Bachiller Computación</span>
-          <span>Diseño Gráfico</span>
-          <span>Biológicas</span>
-          <span>Perito Contador</span>
+          <span>No me interesa</span>
+          <span>Poco</span>
+          <span>Me interesa</span>
+          <span>Totalmente de acuerdo</span>
         </div>
 
         <p className="test-contador">

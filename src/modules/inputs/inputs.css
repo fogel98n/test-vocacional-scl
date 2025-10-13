@@ -1,0 +1,38 @@
+.scl-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.scl-input-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.scl-input-field {
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #dbe6ef;
+  outline: none;
+  transition: box-shadow 0.12s ease, border-color 0.12s ease;
+  font-size: 1rem;
+}
+
+.scl-input-field:focus {
+  box-shadow: 0 6px 18px rgba(30, 90, 142, 0.08);
+  border-color: var(--primary-color);
+}
+
+.scl-input-error {
+  color: #d32f2f;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .scl-input-field {
+    padding: 0.85rem 0.9rem;
+    font-size: 1rem;
+  }
+}

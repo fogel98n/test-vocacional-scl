@@ -1,4 +1,3 @@
-
 export type Opcion = "A" | "B" | "C" | "D";
 
 export interface Pregunta {
@@ -12,12 +11,11 @@ export interface Pregunta {
   };
 }
 
-// 10 preguntas por carrera
 export const preguntasVocacional: Pregunta[] = [
-  // --- Bachillerato en Computación ---
+  // --- Computación ---
   {
     carrera: "Computacion",
-    pregunta: "¿Te interesa aprender a programar y crear software?",
+    pregunta: "¿Te gusta usar computadoras y descubrir cómo funcionan?",
     opciones: {
       A: "Sí, mucho",
       B: "Un poco",
@@ -27,111 +25,101 @@ export const preguntasVocacional: Pregunta[] = [
   },
   {
     carrera: "Computacion",
-    pregunta: "¿Disfrutas resolver problemas lógicos o matemáticos?",
+    pregunta: "¿Disfrutas resolver juegos o acertijos que te hacen pensar?",
     opciones: {
-      A: "Sí, bastante",
+      A: "Sí, me encanta",
       B: "A veces",
-      C: "Rara vez",
-      D: "No me gusta",
+      C: "Poco",
+      D: "Nada",
     },
   },
   {
     carrera: "Computacion",
-    pregunta: "¿Te gustaría desarrollar aplicaciones o videojuegos?",
+    pregunta: "¿Te gustaría crear tus propias aplicaciones o páginas web?",
     opciones: {
-      A: "Sí, totalmente",
-      B: "Tal vez",
-      C: "No estoy seguro",
+      A: "Sí, mucho",
+      B: "Podría intentarlo",
+      C: "No sé",
       D: "No me interesa",
     },
   },
   {
     carrera: "Computacion",
-    pregunta: "¿Te atrae entender cómo funcionan los sistemas operativos o redes?",
+    pregunta: "¿Te gusta investigar y aprender cosas nuevas sobre tecnología?",
     opciones: {
-      A: "Sí, mucho",
-      B: "Algo",
+      A: "Sí, bastante",
+      B: "A veces",
       C: "Poco",
       D: "Nada",
     },
   },
   {
     carrera: "Computacion",
-    pregunta: "¿Tienes curiosidad por la inteligencia artificial o la robótica?",
+    pregunta: "¿Prefieres trabajar con máquinas antes que con personas?",
     opciones: {
-      A: "Sí, mucho",
-      B: "Algo",
-      C: "No mucho",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Computacion",
-    pregunta: "¿Te gustaría trabajar con hardware o ensamblar computadoras?",
-    opciones: {
-      A: "Sí",
-      B: "Un poco",
-      C: "No tanto",
-      D: "No me gusta",
-    },
-  },
-  {
-    carrera: "Computacion",
-    pregunta: "¿Prefieres trabajar con tecnología antes que con personas?",
-    opciones: {
-      A: "Sí, totalmente",
-      B: "Depende",
+      A: "Sí, me siento más cómodo así",
+      B: "Depende del caso",
       C: "Prefiero personas",
       D: "No me interesa ninguna",
     },
   },
   {
     carrera: "Computacion",
-    pregunta: "¿Te emociona aprender nuevos lenguajes de programación?",
+    pregunta: "¿Te gusta armar o reparar aparatos electrónicos?",
     opciones: {
-      A: "Sí, me encanta",
+      A: "Sí, mucho",
+      B: "Un poco",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "Computacion",
+    pregunta: "¿Eres paciente cuando algo no funciona e intentas solucionarlo?",
+    opciones: {
+      A: "Sí, mucho",
       B: "A veces",
-      C: "No tanto",
-      D: "No me interesa",
+      C: "Poco",
+      D: "Nada",
     },
   },
   {
     carrera: "Computacion",
-    pregunta: "¿Te ves trabajando en desarrollo de software o ciberseguridad?",
+    pregunta: "¿Te imaginas trabajando frente a una computadora la mayor parte del día?",
     opciones: {
-      A: "Sí",
+      A: "Sí, no me molestaría",
       B: "Tal vez",
-      C: "No sé",
-      D: "No lo veo para mí",
+      C: "No mucho",
+      D: "No me gustaría",
     },
   },
   {
     carrera: "Computacion",
-    pregunta: "¿Sueles tener paciencia para encontrar errores en tu trabajo?",
+    pregunta: "¿Te gusta aprender cosas por tu cuenta en internet?",
     opciones: {
-      A: "Sí, mucha",
+      A: "Sí, todo el tiempo",
+      B: "A veces",
+      C: "Rara vez",
+      D: "Nunca",
+    },
+  },
+  {
+    carrera: "Computacion",
+    pregunta: "¿Sueles ser curioso con cómo funcionan los dispositivos o programas?",
+    opciones: {
+      A: "Sí, mucho",
       B: "Algo",
-      C: "Poca",
-      D: "Ninguna",
+      C: "Poco",
+      D: "Nada",
     },
   },
 
-  // --- Bachillerato en Diseño ---
+  // --- Diseño ---
   {
     carrera: "Diseno",
-    pregunta: "¿Te gusta crear gráficos, ilustraciones o animaciones?",
+    pregunta: "¿Te gusta dibujar o hacer cosas creativas?",
     opciones: {
       A: "Sí, mucho",
-      B: "Un poco",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Diseno",
-    pregunta: "¿Te interesa el diseño de logotipos, carteles o contenido visual?",
-    opciones: {
-      A: "Sí, bastante",
       B: "A veces",
       C: "Poco",
       D: "Nada",
@@ -139,77 +127,57 @@ export const preguntasVocacional: Pregunta[] = [
   },
   {
     carrera: "Diseno",
-    pregunta: "¿Te atrae trabajar con programas como Photoshop, Illustrator o Canva?",
-    opciones: {
-      A: "Sí, mucho",
-      B: "Algo",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Diseno",
-    pregunta: "¿Tienes buena percepción de colores, formas y proporciones?",
-    opciones: {
-      A: "Sí, excelente",
-      B: "Buena",
-      C: "Regular",
-      D: "Mala",
-    },
-  },
-  {
-    carrera: "Diseno",
-    pregunta: "¿Te gustaría dedicarte al diseño publicitario o digital?",
-    opciones: {
-      A: "Sí",
-      B: "Tal vez",
-      C: "No sé",
-      D: "No",
-    },
-  },
-  {
-    carrera: "Diseno",
-    pregunta: "¿Disfrutas combinar creatividad con tecnología?",
-    opciones: {
-      A: "Sí, totalmente",
-      B: "Depende",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Diseno",
-    pregunta: "¿Te consideras una persona creativa e innovadora?",
-    opciones: {
-      A: "Sí, mucho",
-      B: "Algo",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Diseno",
-    pregunta: "¿Te interesa aprender sobre tipografía y composición visual?",
-    opciones: {
-      A: "Sí, bastante",
-      B: "Un poco",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Diseno",
-    pregunta: "¿Te gustaría crear diseños para redes sociales, marcas o sitios web?",
+    pregunta: "¿Te gusta elegir colores, combinar ropa o decorar cosas?",
     opciones: {
       A: "Sí, me encanta",
-      B: "Podría hacerlo",
-      C: "No mucho",
-      D: "No me interesa",
+      B: "Un poco",
+      C: "No tanto",
+      D: "Nada",
     },
   },
   {
     carrera: "Diseno",
-    pregunta: "¿Sueles imaginar cómo mejorar el aspecto visual de las cosas?",
+    pregunta: "¿Te fijas en los detalles de los carteles o anuncios?",
+    opciones: {
+      A: "Sí, siempre",
+      B: "A veces",
+      C: "Poco",
+      D: "Nunca",
+    },
+  },
+  {
+    carrera: "Diseno",
+    pregunta: "¿Disfrutas imaginar nuevas ideas o formas de hacer las cosas?",
+    opciones: {
+      A: "Sí, mucho",
+      B: "Algo",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "Diseno",
+    pregunta: "¿Te gustaría trabajar en algo relacionado con el arte o la creatividad?",
+    opciones: {
+      A: "Sí, totalmente",
+      B: "Tal vez",
+      C: "No estoy seguro",
+      D: "No me gustaría",
+    },
+  },
+  {
+    carrera: "Diseno",
+    pregunta: "¿Te gusta que las cosas se vean ordenadas y bonitas?",
+    opciones: {
+      A: "Sí, mucho",
+      B: "A veces",
+      C: "No tanto",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "Diseno",
+    pregunta: "¿Sueles imaginar cómo mejorar el aspecto de algo?",
     opciones: {
       A: "Sí, siempre",
       B: "A veces",
@@ -217,11 +185,41 @@ export const preguntasVocacional: Pregunta[] = [
       D: "Nunca",
     },
   },
+  {
+    carrera: "Diseno",
+    pregunta: "¿Te gustaría hacer dibujos o diseños para redes sociales o marcas?",
+    opciones: {
+      A: "Sí, me encantaría",
+      B: "Tal vez",
+      C: "No sé",
+      D: "No me interesa",
+    },
+  },
+  {
+    carrera: "Diseno",
+    pregunta: "¿Te consideras una persona con mucha imaginación?",
+    opciones: {
+      A: "Sí, mucho",
+      B: "Un poco",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "Diseno",
+    pregunta: "¿Te gusta trabajar con colores, dibujos o decoraciones?",
+    opciones: {
+      A: "Sí, mucho",
+      B: "A veces",
+      C: "No tanto",
+      D: "Nada",
+    },
+  },
 
   // --- Ciencias Biológicas ---
   {
     carrera: "Biologicas",
-    pregunta: "¿Te interesa estudiar organismos, plantas o ecosistemas?",
+    pregunta: "¿Te gusta observar la naturaleza, los animales o las plantas?",
     opciones: {
       A: "Sí, mucho",
       B: "Algo",
@@ -231,9 +229,29 @@ export const preguntasVocacional: Pregunta[] = [
   },
   {
     carrera: "Biologicas",
-    pregunta: "¿Te motiva hacer experimentos de biología o química?",
+    pregunta: "¿Te interesa cuidar el medio ambiente?",
     opciones: {
-      A: "Sí, disfruto mucho",
+      A: "Sí, mucho",
+      B: "Un poco",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "Biologicas",
+    pregunta: "¿Te gustaría saber más sobre cómo funciona el cuerpo humano?",
+    opciones: {
+      A: "Sí, bastante",
+      B: "Algo",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "Biologicas",
+    pregunta: "¿Disfrutas aprender cosas sobre los animales o las plantas?",
+    opciones: {
+      A: "Sí, mucho",
       B: "A veces",
       C: "Rara vez",
       D: "Nunca",
@@ -241,89 +259,69 @@ export const preguntasVocacional: Pregunta[] = [
   },
   {
     carrera: "Biologicas",
-    pregunta: "¿Te gusta leer sobre descubrimientos científicos?",
+    pregunta: "¿Te gustaría trabajar en algo relacionado con la salud o la naturaleza?",
     opciones: {
-      A: "Sí, con frecuencia",
-      B: "A veces",
-      C: "Pocas veces",
-      D: "Nunca",
-    },
-  },
-  {
-    carrera: "Biologicas",
-    pregunta: "¿Te interesa la salud humana, genética o microbiología?",
-    opciones: {
-      A: "Sí, mucho",
-      B: "Algo",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Biologicas",
-    pregunta: "¿Disfrutas estar al aire libre y observar la naturaleza?",
-    opciones: {
-      A: "Sí, bastante",
-      B: "A veces",
-      C: "Poco",
-      D: "Nunca",
-    },
-  },
-  {
-    carrera: "Biologicas",
-    pregunta: "¿Tienes curiosidad por entender cómo funcionan los seres vivos?",
-    opciones: {
-      A: "Sí, mucha curiosidad",
-      B: "Moderada",
-      C: "Poca",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Biologicas",
-    pregunta: "¿Te gustaría dedicarte a la investigación o biotecnología?",
-    opciones: {
-      A: "Sí, mucho",
-      B: "Quizás",
-      C: "No estoy seguro",
-      D: "No lo veo para mí",
-    },
-  },
-  {
-    carrera: "Biologicas",
-    pregunta: "¿Te interesa la conservación del medio ambiente?",
-    opciones: {
-      A: "Sí",
-      B: "Algo",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Biologicas",
-    pregunta: "¿Prefieres resolver problemas relacionados con la salud o la ecología?",
-    opciones: {
-      A: "Sí",
-      B: "Depende del tema",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "Biologicas",
-    pregunta: "¿Te ves trabajando en investigación o salud pública?",
-    opciones: {
-      A: "Sí, definitivamente",
+      A: "Sí, totalmente",
       B: "Tal vez",
       C: "No sé",
-      D: "No me imagino allí",
+      D: "No me gustaría",
+    },
+  },
+  {
+    carrera: "Biologicas",
+    pregunta: "¿Sueles ser curioso sobre cómo viven o crecen los seres vivos?",
+    opciones: {
+      A: "Sí, mucho",
+      B: "Algo",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "Biologicas",
+    pregunta: "¿Prefieres actividades al aire libre antes que en oficina?",
+    opciones: {
+      A: "Sí, siempre",
+      B: "A veces",
+      C: "Rara vez",
+      D: "Nunca",
+    },
+  },
+  {
+    carrera: "Biologicas",
+    pregunta: "¿Te gustaría investigar o ayudar a mejorar la salud de las personas?",
+    opciones: {
+      A: "Sí",
+      B: "Tal vez",
+      C: "No sé",
+      D: "No",
+    },
+  },
+  {
+    carrera: "Biologicas",
+    pregunta: "¿Disfrutas ver documentales sobre la naturaleza o el espacio?",
+    opciones: {
+      A: "Sí, mucho",
+      B: "A veces",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "Biologicas",
+    pregunta: "¿Te interesa aprender cómo cuidar mejor el planeta?",
+    opciones: {
+      A: "Sí, mucho",
+      B: "Algo",
+      C: "Poco",
+      D: "Nada",
     },
   },
 
   // --- Perito Contador ---
   {
     carrera: "PeritoContador",
-    pregunta: "¿Te gusta trabajar con números, cálculos y finanzas?",
+    pregunta: "¿Te gusta el orden y llevar control de tus cosas?",
     opciones: {
       A: "Sí, mucho",
       B: "Algo",
@@ -333,17 +331,7 @@ export const preguntasVocacional: Pregunta[] = [
   },
   {
     carrera: "PeritoContador",
-    pregunta: "¿Te interesa la contabilidad, auditoría o administración?",
-    opciones: {
-      A: "Sí",
-      B: "Un poco",
-      C: "No mucho",
-      D: "No me interesa",
-    },
-  },
-  {
-    carrera: "PeritoContador",
-    pregunta: "¿Disfrutas llevar registros, balances o informes contables?",
+    pregunta: "¿Disfrutas hacer cuentas o manejar dinero?",
     opciones: {
       A: "Sí, bastante",
       B: "A veces",
@@ -353,17 +341,7 @@ export const preguntasVocacional: Pregunta[] = [
   },
   {
     carrera: "PeritoContador",
-    pregunta: "¿Eres una persona organizada y detallista?",
-    opciones: {
-      A: "Sí, mucho",
-      B: "Más o menos",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "PeritoContador",
-    pregunta: "¿Te gustaría aprender sobre impuestos y leyes financieras?",
+    pregunta: "¿Te consideras una persona responsable y detallista?",
     opciones: {
       A: "Sí, mucho",
       B: "Algo",
@@ -373,52 +351,72 @@ export const preguntasVocacional: Pregunta[] = [
   },
   {
     carrera: "PeritoContador",
-    pregunta: "¿Prefieres trabajar en oficina con documentos y cálculos?",
+    pregunta: "¿Te gustaría ayudar a organizar el dinero de una empresa o negocio?",
     opciones: {
-      A: "Sí, me gusta",
-      B: "Depende del día",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "PeritoContador",
-    pregunta: "¿Te interesa el manejo del dinero y los presupuestos?",
-    opciones: {
-      A: "Sí, bastante",
-      B: "Algo",
-      C: "Poco",
-      D: "Nada",
-    },
-  },
-  {
-    carrera: "PeritoContador",
-    pregunta: "¿Disfrutas resolver problemas financieros o calcular costos?",
-    opciones: {
-      A: "Sí",
-      B: "A veces",
-      C: "Rara vez",
-      D: "No",
-    },
-  },
-  {
-    carrera: "PeritoContador",
-    pregunta: "¿Te ves trabajando en empresas, bancos o instituciones financieras?",
-    opciones: {
-      A: "Sí",
+      A: "Sí, totalmente",
       B: "Tal vez",
       C: "No sé",
-      D: "No lo veo para mí",
+      D: "No me gustaría",
     },
   },
   {
     carrera: "PeritoContador",
-    pregunta: "¿Te gustaría dirigir tu propio negocio o asesorar empresas?",
+    pregunta: "¿Prefieres trabajar con números antes que con cosas creativas?",
+    opciones: {
+      A: "Sí",
+      B: "Depende",
+      C: "No mucho",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "PeritoContador",
+    pregunta: "¿Te gusta planificar tus gastos o ahorrar dinero?",
+    opciones: {
+      A: "Sí, siempre",
+      B: "A veces",
+      C: "Poco",
+      D: "Nunca",
+    },
+  },
+  {
+    carrera: "PeritoContador",
+    pregunta: "¿Eres ordenado cuando haces tus tareas o trabajos?",
     opciones: {
       A: "Sí, mucho",
+      B: "A veces",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "PeritoContador",
+    pregunta: "¿Te interesa aprender cómo funcionan las empresas?",
+    opciones: {
+      A: "Sí, bastante",
+      B: "Un poco",
+      C: "Poco",
+      D: "Nada",
+    },
+  },
+  {
+    carrera: "PeritoContador",
+    pregunta: "¿Te gustaría tener tu propio negocio algún día?",
+    opciones: {
+      A: "Sí, claro",
       B: "Tal vez",
-      C: "No estoy seguro",
+      C: "No sé",
       D: "No me interesa",
+    },
+  },
+  {
+    carrera: "PeritoContador",
+    pregunta: "¿Prefieres trabajos tranquilos y bien organizados?",
+    opciones: {
+      A: "Sí, me gusta eso",
+      B: "Depende",
+      C: "No tanto",
+      D: "Nada",
     },
   },
 ];

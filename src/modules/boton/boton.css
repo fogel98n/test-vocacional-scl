@@ -1,0 +1,34 @@
+/* Estilos base para botones reutilizables */
+.scl-boton {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #1e5a8e, #4caf50);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(30, 90, 142, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scl-boton:active {
+  transform: translateY(1px);
+}
+
+.scl-boton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Tamaños y hit-target para pantallas pequeñas */
+@media (max-width: 600px) {
+  .scl-boton {
+    padding: 1.1rem 1.6rem;
+    border-radius: 14px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

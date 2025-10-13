@@ -1,4 +1,5 @@
 import type { FieldErrors, UseFormRegister } from "react-hook-form";
+import "./inputs.css";
 
 interface InputProps {
   label: string;
@@ -9,15 +10,12 @@ interface InputProps {
 }
 
 export function Inputs({ label, name, register, errors, type = "text" }: InputProps) {
+  const errorMsg = errors[name]?.message?.toString();
   return (
-    <div style={{ marginBottom: "15px" }}>
-      <label>{label}:</label>
-      <input type={type} {...register(name)} style={{ marginLeft: "10px", padding: "5px" }} />
-      {errors[name] && (
-        <span style={{ color: "red", marginLeft: "10px" }}>
-          {errors[name]?.message?.toString()}
-        </span>
-      )}
+    <div className="scl-input-group">
+      <label className="scl-input-label">{label}</label>
+      <input className="scl-input-field" type={type} {...register(name)} />
+      {errorMsg && <span className="scl-input-error">{errorMsg}</span>}
     </div>
   );
 }
